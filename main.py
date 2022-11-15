@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("Bank personal loan eligibility checker")
 
-loaded_model = pickle.load(open("/model.sav", 'rb'))
+loaded_model = pickle.load(open("model.sav", 'rb'))
 
 Age = st.slider("Age (Customer's age in completed years)", min_value=0, max_value=100)
 
