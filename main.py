@@ -40,7 +40,6 @@ if predict:
     input_data = {'Age':[Age], 'Experience':[Experience], 'Income':[Income], 'Family':[family], 'CCAvg':[CCAvg], 'Education':[ed], 'Mortgage':[Mortgage], 'Securities Account':[sa], 'CD Account':[cda], 'Online':[online], 'CreditCard':[ccard],}
     sample = pd.DataFrame(input_data)
     result = loaded_model.predict(sample)
-    print(result)
     if result[0] == 0:
         st.warning("Sorry you are not eligible for personal loan")
     else:
